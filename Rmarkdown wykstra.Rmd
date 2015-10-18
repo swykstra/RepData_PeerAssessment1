@@ -31,6 +31,11 @@ plot.ts(data.1)
 #Find 5 min interval with most steps
 max(data.1["steps"])
 max5min<-data.1[data.1$steps==806,]
+max5min$interval
+
+#Calculate number of rows with NAs
+NA.total<-sum(is.na(data))
+NA.total
 
 ```
 
